@@ -180,6 +180,10 @@
             
         case UIGestureRecognizerStateEnded: {
             
+            // Update the destination view first, since the drop: method may
+            // remove it
+            [self.destinationView dragDropped:self];
+            
             // Perform the drop logic
             // restoreSourceView may be called
             self.restoreSourceViewPermitted = YES;
@@ -196,9 +200,6 @@
                 [self.draggingView removeFromSuperview];
             }
             self.draggingView = nil;
-            
-            
-            [self.destinationView dragDropped:self];
         }
             break;
             
