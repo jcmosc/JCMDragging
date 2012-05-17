@@ -7,6 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1AB2D31D1564A9D800F7C9B0 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AB2D31C1564A9D800F7C9B0 /* UIKit.framework */; };
+		1AB2D31E1564A9D800F7C9B0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AD08F1E156242E200977B78 /* Foundation.framework */; };
+		1AB2D3201564A9D800F7C9B0 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AB2D31F1564A9D800F7C9B0 /* CoreGraphics.framework */; };
+		1AB2D3261564A9D800F7C9B0 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1AB2D3241564A9D800F7C9B0 /* InfoPlist.strings */; };
+		1AB2D3281564A9D800F7C9B0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AB2D3271564A9D800F7C9B0 /* main.m */; };
+		1AB2D32C1564A9D800F7C9B0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AB2D32B1564A9D800F7C9B0 /* AppDelegate.m */; };
+		1AB2D32F1564A9D800F7C9B0 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1AB2D32D1564A9D800F7C9B0 /* MainStoryboard.storyboard */; };
+		1AB2D3321564A9D800F7C9B0 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AB2D3311564A9D800F7C9B0 /* ViewController.m */; };
+		1AB2D3391564AAC100F7C9B0 /* DraggingTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AB2D3381564AAC100F7C9B0 /* DraggingTableViewController.m */; };
+		1AB2D3421564C20C00F7C9B0 /* libJCMDragging.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AD08F1B156242E200977B78 /* libJCMDragging.a */; };
 		1AD08F1F156242E200977B78 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AD08F1E156242E200977B78 /* Foundation.framework */; };
 		1AD08F41156243C200977B78 /* JCMDragGestureRecognizer.h in Headers */ = {isa = PBXBuildFile; fileRef = 1AD08F3F156243C200977B78 /* JCMDragGestureRecognizer.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		1AD08F42156243C200977B78 /* JCMDragGestureRecognizer.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AD08F40156243C200977B78 /* JCMDragGestureRecognizer.m */; };
@@ -20,6 +30,20 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1AB2D31A1564A9D800F7C9B0 /* JCMDraggingExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JCMDraggingExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1AB2D31C1564A9D800F7C9B0 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		1AB2D31F1564A9D800F7C9B0 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		1AB2D3231564A9D800F7C9B0 /* JCMDraggingExample-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "JCMDraggingExample-Info.plist"; sourceTree = "<group>"; };
+		1AB2D3251564A9D800F7C9B0 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		1AB2D3271564A9D800F7C9B0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		1AB2D3291564A9D800F7C9B0 /* JCMDraggingExample-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "JCMDraggingExample-Prefix.pch"; sourceTree = "<group>"; };
+		1AB2D32A1564A9D800F7C9B0 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		1AB2D32B1564A9D800F7C9B0 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		1AB2D32E1564A9D800F7C9B0 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
+		1AB2D3301564A9D800F7C9B0 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		1AB2D3311564A9D800F7C9B0 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		1AB2D3371564AAC100F7C9B0 /* DraggingTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DraggingTableViewController.h; sourceTree = "<group>"; };
+		1AB2D3381564AAC100F7C9B0 /* DraggingTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DraggingTableViewController.m; sourceTree = "<group>"; };
 		1AD08F1B156242E200977B78 /* libJCMDragging.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libJCMDragging.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		1AD08F1E156242E200977B78 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		1AD08F22156242E200977B78 /* JCMDragging-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "JCMDragging-Prefix.pch"; sourceTree = "<group>"; };
@@ -35,6 +59,17 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		1AB2D3171564A9D800F7C9B0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1AB2D3421564C20C00F7C9B0 /* libJCMDragging.a in Frameworks */,
+				1AB2D31D1564A9D800F7C9B0 /* UIKit.framework in Frameworks */,
+				1AB2D31E1564A9D800F7C9B0 /* Foundation.framework in Frameworks */,
+				1AB2D3201564A9D800F7C9B0 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		1AD08F18156242E200977B78 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -46,10 +81,37 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1AB2D3211564A9D800F7C9B0 /* JCMDraggingExample */ = {
+			isa = PBXGroup;
+			children = (
+				1AB2D32A1564A9D800F7C9B0 /* AppDelegate.h */,
+				1AB2D32B1564A9D800F7C9B0 /* AppDelegate.m */,
+				1AB2D32D1564A9D800F7C9B0 /* MainStoryboard.storyboard */,
+				1AB2D3301564A9D800F7C9B0 /* ViewController.h */,
+				1AB2D3311564A9D800F7C9B0 /* ViewController.m */,
+				1AB2D3371564AAC100F7C9B0 /* DraggingTableViewController.h */,
+				1AB2D3381564AAC100F7C9B0 /* DraggingTableViewController.m */,
+				1AB2D3221564A9D800F7C9B0 /* Supporting Files */,
+			);
+			path = JCMDraggingExample;
+			sourceTree = "<group>";
+		};
+		1AB2D3221564A9D800F7C9B0 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				1AB2D3231564A9D800F7C9B0 /* JCMDraggingExample-Info.plist */,
+				1AB2D3241564A9D800F7C9B0 /* InfoPlist.strings */,
+				1AB2D3271564A9D800F7C9B0 /* main.m */,
+				1AB2D3291564A9D800F7C9B0 /* JCMDraggingExample-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		1AD08F10156242E200977B78 = {
 			isa = PBXGroup;
 			children = (
 				1AD08F20156242E200977B78 /* JCMDragging */,
+				1AB2D3211564A9D800F7C9B0 /* JCMDraggingExample */,
 				1AD08F1D156242E200977B78 /* Frameworks */,
 				1AD08F1C156242E200977B78 /* Products */,
 			);
@@ -59,6 +121,7 @@
 			isa = PBXGroup;
 			children = (
 				1AD08F1B156242E200977B78 /* libJCMDragging.a */,
+				1AB2D31A1564A9D800F7C9B0 /* JCMDraggingExample.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -67,6 +130,8 @@
 			isa = PBXGroup;
 			children = (
 				1AD08F1E156242E200977B78 /* Foundation.framework */,
+				1AB2D31C1564A9D800F7C9B0 /* UIKit.framework */,
+				1AB2D31F1564A9D800F7C9B0 /* CoreGraphics.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -114,6 +179,23 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		1AB2D3191564A9D800F7C9B0 /* JCMDraggingExample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1AB2D3351564A9D800F7C9B0 /* Build configuration list for PBXNativeTarget "JCMDraggingExample" */;
+			buildPhases = (
+				1AB2D3161564A9D800F7C9B0 /* Sources */,
+				1AB2D3171564A9D800F7C9B0 /* Frameworks */,
+				1AB2D3181564A9D800F7C9B0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = JCMDraggingExample;
+			productName = JCMDraggingExample;
+			productReference = 1AB2D31A1564A9D800F7C9B0 /* JCMDraggingExample.app */;
+			productType = "com.apple.product-type.application";
+		};
 		1AD08F1A156242E200977B78 /* JCMDragging */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1AD08F28156242E200977B78 /* Build configuration list for PBXNativeTarget "JCMDragging" */;
@@ -153,11 +235,35 @@
 			projectRoot = "";
 			targets = (
 				1AD08F1A156242E200977B78 /* JCMDragging */,
+				1AB2D3191564A9D800F7C9B0 /* JCMDraggingExample */,
 			);
 		};
 /* End PBXProject section */
 
+/* Begin PBXResourcesBuildPhase section */
+		1AB2D3181564A9D800F7C9B0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1AB2D3261564A9D800F7C9B0 /* InfoPlist.strings in Resources */,
+				1AB2D32F1564A9D800F7C9B0 /* MainStoryboard.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
+		1AB2D3161564A9D800F7C9B0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1AB2D3281564A9D800F7C9B0 /* main.m in Sources */,
+				1AB2D32C1564A9D800F7C9B0 /* AppDelegate.m in Sources */,
+				1AB2D3321564A9D800F7C9B0 /* ViewController.m in Sources */,
+				1AB2D3391564AAC100F7C9B0 /* DraggingTableViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		1AD08F17156242E200977B78 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -171,7 +277,58 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXVariantGroup section */
+		1AB2D3241564A9D800F7C9B0 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1AB2D3251564A9D800F7C9B0 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		1AB2D32D1564A9D800F7C9B0 /* MainStoryboard.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1AB2D32E1564A9D800F7C9B0 /* en */,
+			);
+			name = MainStoryboard.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
 /* Begin XCBuildConfiguration section */
+		1AB2D3331564A9D800F7C9B0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "JCMDraggingExample/JCMDraggingExample-Prefix.pch";
+				INFOPLIST_FILE = "JCMDraggingExample/JCMDraggingExample-Info.plist";
+				"OTHER_LDFLAGS[arch=*]" = "-ObjC";
+				PRELINK_LIBS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 2;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		1AB2D3341564A9D800F7C9B0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "JCMDraggingExample/JCMDraggingExample-Prefix.pch";
+				INFOPLIST_FILE = "JCMDraggingExample/JCMDraggingExample-Info.plist";
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				OTHER_LDFLAGS = "-ObjC";
+				"OTHER_LDFLAGS[arch=*]" = "-ObjC";
+				PRELINK_LIBS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 2;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
 		1AD08F26156242E200977B78 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -241,6 +398,14 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		1AB2D3351564A9D800F7C9B0 /* Build configuration list for PBXNativeTarget "JCMDraggingExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1AB2D3331564A9D800F7C9B0 /* Debug */,
+				1AB2D3341564A9D800F7C9B0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		1AD08F15156242E200977B78 /* Build configuration list for PBXProject "JCMDragging" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
