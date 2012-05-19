@@ -69,7 +69,9 @@
 
 @implementation JCMDragGestureRecognizer
 
-@synthesize sourceView, destinationView, draggingView, delegate;
+@dynamic delegate;
+
+@synthesize sourceView, destinationView, draggingView;
 @synthesize draggingViewCenterOffset, deleteSourceViewPermitted, restoreSourceViewPermitted;
 
 
