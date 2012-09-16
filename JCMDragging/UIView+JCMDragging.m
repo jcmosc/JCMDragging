@@ -54,7 +54,8 @@
     // XXX: Some UIKit view classes override this method to return self. This
     //      behavior should be mirrored here.
     
-    for (UIView *subview in self.subviews) {
+    // Enumerate subviews backwards to hit the topmost view of overlapping views
+    for (UIView *subview in [self.subviews reverseObjectEnumerator]) {
         
         // Same as in -hitTest:withEvent:
         if (subview.hidden || !subview.userInteractionEnabled || subview.alpha < 0.01) {
