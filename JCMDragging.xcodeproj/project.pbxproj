@@ -56,6 +56,7 @@
 		1AD08F4C156252FF00977B78 /* UIView+JCMDragging.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+JCMDragging.m"; sourceTree = "<group>"; };
 		1AD08F4F1562535700977B78 /* UIPasteboard+JCMDragging.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIPasteboard+JCMDragging.h"; sourceTree = "<group>"; };
 		1AD08F501562535800977B78 /* UIPasteboard+JCMDragging.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIPasteboard+JCMDragging.m"; sourceTree = "<group>"; };
+		1AFBF1AE1606FF5200201858 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +111,7 @@
 		1AD08F10156242E200977B78 = {
 			isa = PBXGroup;
 			children = (
+				1AFBF1AE1606FF5200201858 /* README.md */,
 				1AD08F20156242E200977B78 /* JCMDragging */,
 				1AB2D3211564A9D800F7C9B0 /* JCMDraggingExample */,
 				1AD08F1D156242E200977B78 /* Frameworks */,
@@ -405,6 +407,7 @@
 				1AB2D3341564A9D800F7C9B0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1AD08F15156242E200977B78 /* Build configuration list for PBXProject "JCMDragging" */ = {
 			isa = XCConfigurationList;
