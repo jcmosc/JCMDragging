@@ -22,15 +22,15 @@ Use the category methods `-[UIView hitTest:withDrag:]` and `-[UIView pointInside
 
 Dragging events are delivered to the hit-tested view via the methods:
 
-    - [UIResponder dragEntered:fromView:]
-    - [UIResponder dragExited:toView:]
+    - [UIResponder dragEntered:didExitView:]
+    - [UIResponder dragExited:willEnterView:]
     - [UIResponder dragUpdated:]
     - [UIResponder dragDropped:]
     - [UIResponder dragCancelled:]
     
 The default implementation of these methods is to forward the event to the next responder.
 
-An additional UIView object is passed to the dragEntered... and dragExited... methods to allow you to accurately interpret dragging events within complex view hierarchies.
+The border crossing event handlers receive an additional parameter indicating the corresponding destination view. This parameter can also be used to accurately interpret dragging events within complex view hierarchies.
 
 ### Share data using the UIPasteboard class
 
@@ -62,9 +62,9 @@ The default implementation of the dragging event handling methods is to forward 
 
 The following example illustrates how to handle drag entered and exited events for a destination view (self) within a complex view hierarchy.
 
-    - (void)dragEntered:(JCMDragGestureRecognizer *)drag fromView:(UIView *)fromView
+    - (void)dragEntered:(JCMDragGestureRecognizer *)drag didExitView:(UIView *)exitingView
     {
-        if ([fromView isDescendantOfView:self]) {
+        if ([exitingView isDescendantOfView:self]) {
             
             // The gesture has entered a subview or descendant view of this view from within this view
             // You will usually simply return here since to avoid handling extraneous events
@@ -76,9 +76,9 @@ The following example illustrates how to handle drag entered and exited events f
         // Change the state or appearance of this view to reflect the fact that a drag gesture is occurring within it here
     }
 
-    - (void)dragExited:(JCMDragGestureRecognizer *)drag toView:(UIView *)toView
+    - (void)dragExited:(JCMDragGestureRecognizer *)drag willEnterView:(UIView *)enteringView
     {
-        if ([toView isDescendantOfView:self.view]) {
+        if ([enteringView isDescendantOfView:self.view]) {
             
             // The gesture has exited a subview or descendant view of this view but is still within this view
             // You will usually simply return here since to avoid handling extraneous events
