@@ -33,8 +33,8 @@
 
 @interface UIResponder (JCMDragging)
 
-- (void)dragEntered:(JCMDragGestureRecognizer *)drag fromView:(UIView *)fromView;  // fromView is the anscestor view the drag did move from if any
-- (void)dragExited:(JCMDragGestureRecognizer *)drag toView:(UIView *)toView;       // toView is the anscestor view the drag will move to if any
+- (void)dragEntered:(JCMDragGestureRecognizer *)drag didExitView:(UIView *)exitingView;
+- (void)dragExited:(JCMDragGestureRecognizer *)drag willEnterView:(UIView *)enteringView;
 - (void)dragUpdated:(JCMDragGestureRecognizer *)drag;
 - (void)dragDropped:(JCMDragGestureRecognizer *)drag;
 - (void)dragCancelled:(JCMDragGestureRecognizer *)drag;

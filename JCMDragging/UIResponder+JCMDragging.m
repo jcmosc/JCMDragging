@@ -33,14 +33,14 @@
 
 #pragma mark - Handling drag events
 
-- (void)dragEntered:(JCMDragGestureRecognizer *)drag fromView:(UIView *)view
+- (void)dragEntered:(JCMDragGestureRecognizer *)drag didExitView:(UIView *)exitingView
 {
-    [self.nextResponder dragEntered:drag fromView:view];
+    [self.nextResponder dragEntered:drag didExitView:exitingView];
 }
 
-- (void)dragExited:(JCMDragGestureRecognizer *)drag toView:(UIView *)view
+- (void)dragExited:(JCMDragGestureRecognizer *)drag willEnterView:(UIView *)enteringView
 {
-    [self.nextResponder dragExited:drag toView:view];
+    [self.nextResponder dragExited:drag willEnterView:enteringView];
 }
 
 - (void)dragUpdated:(JCMDragGestureRecognizer *)drag

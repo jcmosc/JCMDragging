@@ -135,7 +135,7 @@
             // XXX: Would there ever be a scenario where the key window would not contain the destination views?
             UIWindow *destinationWindow = [[UIApplication sharedApplication] keyWindow];
             self.destinationView = [destinationWindow hitTest:[self locationInView:destinationWindow] withDrag:self];
-            [self.destinationView dragEntered:self fromView:nil];
+            [self.destinationView dragEntered:self didExitView:nil];
         }
             break;
             
@@ -145,36 +145,18 @@
             CGPoint location = [self locationInView:self.draggingView.superview];
             self.draggingView.center = CGPointMake(location.x + self.draggingViewCenterOffset.x, location.y + self.draggingViewCenterOffset.y);
             
-            
             // Update the destination view
             UIView *initialView = self.destinationView;
             
-            // Has the drag moved outside the destination view?
-            UIView *toView = self.destinationView;
-            while (toView && ![toView pointInside:[self locationInView:toView] withDrag:self]) {
-                toView = toView.superview;
-            }
+            // XXX: Would there ever be a scenario where the key window would not contain the destination views?
+            UIWindow *destinationWindow = [[UIApplication sharedApplication] keyWindow];
+            UIView *finalView = [destinationWindow hitTest:[self locationInView:destinationWindow] withDrag:self];
             
-            // The drag has moved outside the destination view
-            if (toView != self.destinationView) {
-                [self.destinationView dragExited:self toView:toView];
-                
-                // The closest anscestor or nil if none is the new destination view
-                self.destinationView = toView;
-            }
-            
-            // Has the drag moved inside a subview of the (new) destination view (or the window if no new destination view)?
-            toView = [(self.destinationView ? self.destinationView : [[UIApplication sharedApplication] keyWindow]) hitTest:[self locationInView:self.destinationView] withDrag:self];
-            
-            // The drag has moved inside a subview of the (new) destination view
-            if (toView != self.destinationView) {
-                UIView *fromView = self.destinationView;
-                self.destinationView = toView;
-                [self.destinationView dragEntered:self fromView:fromView];
-            }
-            
-            // The drag has just moved within the same destination view
-            if (initialView == self.destinationView) {
+            if (initialView != finalView) {
+                [self.destinationView dragExited:self willEnterView:finalView];
+                self.destinationView = finalView;
+                [self.destinationView dragEntered:self didExitView:initialView];
+            } else {
                 [self.destinationView dragUpdated:self];
             }
         }
