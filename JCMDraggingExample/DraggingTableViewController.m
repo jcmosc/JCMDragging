@@ -168,10 +168,10 @@ static const NSUInteger DraggingTableViewControllerInitialItemsCount = 6;
 
 #pragma mark - Responding to dragging events
 
-- (void)dragEntered:(JCMDragGestureRecognizer *)drag fromView:(UIView *)fromView
+- (void)dragEntered:(JCMDragGestureRecognizer *)drag didExitView:(UIView *)exitingView
 {
     // Ignore drag entered events for subviews of the table view
-    if ([fromView isDescendantOfView:self.view]) {
+    if ([exitingView isDescendantOfView:self.view]) {
         return;
     }
     
@@ -179,10 +179,10 @@ static const NSUInteger DraggingTableViewControllerInitialItemsCount = 6;
     self.view.layer.borderColor = [UIColor blackColor].CGColor;
 }
 
-- (void)dragExited:(JCMDragGestureRecognizer *)drag toView:(UIView *)toView
+- (void)dragExited:(JCMDragGestureRecognizer *)drag willEnterView:(UIView *)enteringView
 {
     // Ignore drag exited events for subviews of the table view
-    if ([toView isDescendantOfView:self.view]) {
+    if ([enteringView isDescendantOfView:self.view]) {
         return;
     }
     
